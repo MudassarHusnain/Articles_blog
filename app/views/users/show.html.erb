@@ -1,0 +1,45 @@
+<h1 style="margin-left: 600px;margin-top: 50px;">User Detail</h1>
+
+<table class="table" style="height: auto;width: 70%;margin-left: 200px">
+  <thead>
+  <tr>
+    <th scope="col">Username</th>
+    <th scope="col">Email</th>
+    <th scope="col">Created At</th>
+    <th scope="col">Updated At</th>
+    <th scope="col">Admin</th>
+  </tr>
+  </thead>
+  <tbody >
+    <tr>
+      <td style=""><%= @user.username %></td>
+
+      <td>
+        <%= @user.email %>
+        <!-- Example split danger button -->
+<!--        <div class="dropdown">-->
+<!--          <button class="btn btn-secondary dropdown-toggle" type="button" data-target="#dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Action-->
+<!--          </button>-->
+<!--          <ul class="dropdown-menu dm-list" aria-labelledby="dropdownMenuButton1">-->
+
+<!--            <li><%#=link_to 'Show',user,class: 'dropdown-item' %></li>-->
+<!--            <li><%#= button_to "Destroy", user, method: :delete,class: 'dropdown-item'%></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+        <!--             <button type="button" class="btn btn-secondary"><%#= link_to "Destroy", post, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },:style => 'text-decoration:none; color:white' %></button>-->
+        <!--             <button type="button" class="btn btn-secondary ms-5"><%#= link_to "Update",edit_post_path(post) ,:style => 'text-decoration:none;color:white' %></button>-->
+
+      </td>
+      <td>
+        <%= @user.created_at %>
+      </td>
+      <td>
+        <%= @user.updated_at %>
+      </td>
+      <td>
+        <%= @user.admin %>
+      </td>
+    </tr>
+  </tbody>
+</table>

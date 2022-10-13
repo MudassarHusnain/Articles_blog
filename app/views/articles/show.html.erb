@@ -1,0 +1,20 @@
+<h1 align="center" class="mb-5 mt-5">Description</h1>
+  <div class="bg-light" style="width: 50%;height:210px;margin-bottom: 20px;border: 1px solid grey;border-radius: 10px;margin-left: 25%">
+    <h3 style="text-transform:capitalize;margin-left: 50px;margin-top: 10px"><%= @article.title %></h3>
+    <hr class="divider ms-5 me-5">
+    <p style="margin-left: 50px;font-size: 20px"><%=@article.body %></p>
+    <hr class="divider ms-5 me-5">
+    <%# binding.pry%>
+    <% if current_user.id == @article.user.id%>
+      <div class="d-flex" >
+      <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary ms-5 me-5" %>
+
+      <%= button_to "Delete this article",article_path(@article), method: :delete, class: "btn btn-danger" %>
+    <%end %>
+      </div>
+      </div>
+
+
+<!--    <button class="btn btn-primary ms-5" style="color: white;"><%#= link_to 'Edit the article',edit_article_path(article),class: 'btn btn-primary'%></button>-->
+<!--    <button class="btn btn-primary" style=""><%#= button_to 'Delete the article',article,method: :delete,class:'btn btn-danger ms-5' %></button>-->
+<!--  </div>-->
