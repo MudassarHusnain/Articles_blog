@@ -133,6 +133,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
+    pg (1.4.4)
     popper_js (2.11.6)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -241,6 +242,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg
   pry
   pry-nav
   puma (~> 5.0)
@@ -248,7 +250,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3
   stimulus-rails
   turbo-rails
   tzinfo-data
